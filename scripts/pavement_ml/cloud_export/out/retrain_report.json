@@ -1,0 +1,32 @@
+{
+  "trained_at": "2026-08-24T08:37:54+00:00",
+  "training_rows": 687,
+  "total_links": 1149,
+  "baseline_links_with_any_data": 1037,
+  "baseline_links_with_vci": 1026,
+  "baseline_links_with_pci": 687,
+  "baseline_links_with_iri": 915,
+  "metrics": {
+    "iri_m_per_km": {
+      "r2": 0.60702,
+      "mae": 1.08003
+    },
+    "rut_depth_mm": {
+      "r2": 0.57436,
+      "mae": 1.83662
+    },
+    "vci": {
+      "r2": 0.64099,
+      "mae": 7.53526
+    },
+    "pci": {
+      "r2": 0.63259,
+      "mae": 7.11925
+    },
+    "cracking_percent": {
+      "r2": 0.62533,
+      "mae": 5.77665
+    }
+  },
+  "note": "Baseline rebuilt fresh from pms_condition_observations (latest survey year per link), not the static 2026-06-23 link_condition_lookup.json snapshot the live pipeline normally reads."
+}

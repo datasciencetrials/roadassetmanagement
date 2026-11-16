@@ -1,0 +1,33 @@
+# Node
+node_modules/
+dist/
+dist-*/
+.vite/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+*.env.*
+!.env.example
+.venv/
+venv/
+ENV/
+
+# Databases & large binaries
+*.db
+*.sqlite*
+*.corrupt*
+*.bak
+*.backup*
+*.fuse_hidden*
+*.tmp
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

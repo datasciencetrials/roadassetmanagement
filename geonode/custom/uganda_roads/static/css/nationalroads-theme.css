@@ -3,12 +3,12 @@
    Loaded via the site_base.html template override.
    ══════════════════════════════════════════════════════════════════════════════ */
 :root {
-  --nationalroads-void:   #020508;
-  --nationalroads-deep:   #060d18;
+  --nationalroads-void:   #F5F5F7;
+  --nationalroads-deep:   #FFFFFF;
   --nationalroads-panel:  #0d1f35;
-  --nationalroads-cyan:   #00f5ff;
+  --nationalroads-cyan:   #0284C7;
   --nationalroads-gold:   #ffd23f;
-  --nationalroads-green:  #00ff88;
+  --nationalroads-green:  #16A34A;
   --nationalroads-text:   #e2eaf4;
   --nationalroads-muted:  #94a3b8;
 }

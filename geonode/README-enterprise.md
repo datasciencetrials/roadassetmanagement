@@ -16,8 +16,8 @@ Uganda National Road Network. For the simpler pre-built quickstart, see
 |---|---|---|
 | ArcGIS Server REST (FeatureService/MapServer query) | REST emulation over PostGIS | `custom/uganda_roads/views/arcgis_rest.py` |
 | Network analysis (routing, service areas) | pgRouting shortest-path + isochrone | `custom/uganda_roads/views/routing.py`, `scripts/build_road_topology.sql` |
-| Print Service (layout templates) | MapFish print proxy + MoWT letterhead | `custom/uganda_roads/views/print_service.py`, `geoserver/printing/config.yaml` |
-| Portal for ArcGIS (home) | MoWT neon-dark portal landing | `custom/templates/geonode/index.html`, `custom/static/css/nationalroads-portal.css` |
+| Print Service (layout templates) | MapFish print proxy + National Roads Authority letterhead | `custom/uganda_roads/views/print_service.py`, `geoserver/printing/config.yaml` |
+| Portal for ArcGIS (home) | National Roads Authority neon-dark portal landing | `custom/templates/geonode/index.html`, `custom/static/css/nationalroads-portal.css` |
 | Living Atlas / basemaps | Dark/OSM/Satellite/Topo switcher (MapStore) | configured in `.env` map client |
 | Enterprise auth (LDAP/SSO) | `django-auth-ldap` + `social-auth` (Google) | `Dockerfile.custom` deps + settings |
 | WPS / WMTS / CSW | enabled on GeoServer | `docker-compose.source.yml` env flags |
@@ -77,7 +77,7 @@ Query example:
 ## 6. Printing
 ```
 GET  /print/capabilities.json            → layouts (A4/A3 × portrait/landscape)
-POST /print/report.pdf  (MapFish spec)   → MoWT-letterhead PDF
+POST /print/report.pdf  (MapFish spec)   → National Roads Authority-letterhead PDF
 ```
 
 ## 7. GeoServer enterprise services (enabled in compose)
@@ -90,8 +90,8 @@ POST /print/report.pdf  (MapFish spec)   → MoWT-letterhead PDF
 **Complete & functional (pending a Docker run):**
 - ArcGIS REST query emulation (where/outFields/geometry/returnCountOnly/geojson) with SQL-injection guards.
 - pgRouting topology SQL + shortest-path / nearest-node / isochrone endpoints.
-- MapFish print proxy + 4 MoWT letterhead layouts.
-- Neon-dark MoWT portal home with live counts via the REST API.
+- MapFish print proxy + 4 National Roads Authority letterhead layouts.
+- Neon-dark National Roads Authority portal home with live counts via the REST API.
 - Build-from-source Dockerfile + compose (pgRouting DB, WPS/WMTS/CSW enabled, LDAP/SSO deps).
 
 **Foundational (scaffolded, needs further build):**

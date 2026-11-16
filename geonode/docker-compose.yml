@@ -74,7 +74,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./custom/uganda_roads:/usr/src/geonode/uganda_roads   # MoWT branding app
+      - ./custom/uganda_roads:/usr/src/geonode/uganda_roads   # National Roads Authority branding app
       - ./data:/import_data                                   # G: layers staged here
       - ./scripts:/import_scripts:ro
       - statics:/mnt/volumes/statics

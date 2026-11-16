@@ -12,7 +12,7 @@
 # ══════════════════════════════════════════════════════════════════════════════
 set -euo pipefail
 
-G_REPO="${G_REPO:-/g/My Drive/MOWT/Uganda National Road Network Repository}"
+G_REPO="${G_REPO:-/g/My Drive/Roads/Uganda National Road Network Repository}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 STAGE="$HERE/data"
 GEONODE_SVC="geonode"
@@ -30,7 +30,7 @@ declare -A SHP=(
   ["8. Shapefiles/Major Culverts"]="major_culverts"
   ["8. Shapefiles/Traffic count stations"]="traffic_count_stations"
   ["8. Shapefiles/Weighbridges"]="weighbridges"
-  ["8. Shapefiles/MoWT_Stations"]="mowt_stations"
+  ["8. Shapefiles/National_Stations"]="national_stations"
   ["8. Shapefiles/Districts"]="districts"
   ["8. Shapefiles/Towns"]="towns"
   ["8. Shapefiles/Protected areas"]="protected_areas"
@@ -60,7 +60,7 @@ fi
 
 echo "▶ Importing into GeoNode (importlayers)…"
 docker compose exec -T "$GEONODE_SVC" python manage.py importlayers /import_data \
-  -v 2 -i -o --keywords "Uganda,roads,MoWT,DNR" --category transportation || {
+  -v 2 -i -o --keywords "Uganda,roads,National Roads Authority,DNR" --category transportation || {
     echo "  importlayers reported issues — check 'docker compose logs $GEONODE_SVC'"; }
 
 echo "▶ Publishing SLD styles to GeoServer…"

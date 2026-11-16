@@ -7,7 +7,7 @@
 defaults:
   category: transportation
   attribution: National Roads Authority · Directorate of National Roads
-  keywords: [Uganda, roads, MoWT, DNR, transport, Road Asset Management]
+  keywords: [Uganda, roads, National Roads Authority, DNR, transport, Road Asset Management]
   srs: EPSG:4326
 
 layers:
@@ -70,7 +70,7 @@ layers:
     title: Maintenance Stations
     source: "8. Shapefiles/MoWT_Stations/MoWT_Stations.shp"
     style: traffic_stations
-    abstract: National Roads Authority/MoWT maintenance station network (23 stations).
+    abstract: National Roads Authority/National Roads Authority maintenance station network (23 stations).
 
   # ── Administrative & context ───────────────────────────────────────────────
   - name: districts

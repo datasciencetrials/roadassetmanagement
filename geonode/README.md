@@ -73,7 +73,7 @@ hosted, and the deployed site will use it.
 ## Branding (already applied)
 - `custom/uganda_roads/settings.py` — extends GeoNode, registers the branding app,
   centres the default map on Uganda, sets CORS for the GitHub Pages origins.
-- `custom/uganda_roads/templates/site_base.html` — MoWT logo + title header, DNR/National Roads Authority footer.
+- `custom/uganda_roads/templates/site_base.html` — National Roads Authority logo + title header, DNR/National Roads Authority footer.
 - `custom/uganda_roads/static/css/nationalroads-theme.css` — palette matching the React platform.
 - `custom/uganda_roads/static/uganda_roads/img/nationalroads.jpg` — National Roads Authority logo.
 
@@ -81,12 +81,12 @@ hosted, and the deployed site will use it.
 ```
 geonode/
 ├── docker-compose.yml      # full stack (geonode, geoserver, db, nginx, celery, redis)
-├── .env                    # all config + MoWT branding vars
+├── .env                    # all config + National Roads Authority branding vars
 ├── layers_config.yml       # layer inventory (from the G: shapefiles)
 ├── styles/                 # GeoServer SLD styles
 │   ├── road_network.sld    road_condition.sld  bridges.sld  traffic_stations.sld
 ├── scripts/import_layers.sh
-├── custom/uganda_roads/    # MoWT branding Django app (settings, templates, static)
+├── custom/uganda_roads/    # National Roads Authority branding Django app (settings, templates, static)
 └── data/                   # staging area (populated by import script; git-ignored)
 ```
 

@@ -1,10 +1,10 @@
 # ══════════════════════════════════════════════════════════════════════════════
-# Custom GeoNode image built FROM SOURCE — Uganda NRMS GIS Enterprise.
+# Custom GeoNode image built FROM SOURCE — Uganda RAMS GIS Enterprise.
 # Builds GeoNode 4.4.x from a cloned ./geonode-source tree (see README-enterprise),
 # layers in GDAL/PostGIS/pgRouting clients, and bakes in the uganda_roads app
-# (ArcGIS-style REST, pgRouting, print, MoWT portal).
+# (ArcGIS-style REST, pgRouting, print, National Roads Authority portal).
 #
-#   docker build -f Dockerfile.custom -t uganda-nrms/geonode:enterprise .
+#   docker build -f Dockerfile.custom -t uganda-rams/geonode:enterprise .
 # ══════════════════════════════════════════════════════════════════════════════
 FROM python:3.11-slim-bookworm
 
@@ -38,7 +38,7 @@ RUN pip install --upgrade pip setuptools wheel \
       gunicorn \
       gdal=="$(gdal-config --version).*"
 
-# 2) MoWT branding + enterprise app (ArcGIS REST, routing, print, portal)
+# 2) National Roads Authority branding + enterprise app (ArcGIS REST, routing, print, portal)
 COPY custom/uganda_roads/ ./uganda_roads/
 COPY custom/templates/ ./uganda_roads/templates/
 COPY custom/static/ ./uganda_roads/static/

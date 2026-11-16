@@ -7,7 +7,7 @@ from django.views.generic import TemplateView
 from .views import arcgis_rest, routing, print_service
 
 urlpatterns = [
-    # MoWT portal home (ArcGIS "Portal" equivalent)
+    # National Roads Authority portal home (ArcGIS "Portal" equivalent)
     path("", TemplateView.as_view(template_name="geonode/index.html"), name="mowt_home"),
 
     # ArcGIS Server REST API emulation
@@ -19,7 +19,7 @@ urlpatterns = [
     path("routing/shortest-path/", routing.shortest_path),
     path("routing/isochrone/", routing.isochrone),
 
-    # MoWT-branded printing (MapFish proxy)
+    # National Roads Authority-branded printing (MapFish proxy)
     path("print/capabilities.json", print_service.capabilities),
     path("print/report.pdf", print_service.report_pdf),
 

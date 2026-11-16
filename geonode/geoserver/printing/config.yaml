@@ -1,7 +1,7 @@
 # ══════════════════════════════════════════════════════════════════════════════
 # MapFish Print template — Uganda Road Asset Management letterhead. Mount into the GeoServer
 # printing module data dir (printing-ng extension). Referenced by print_service.py
-# as app "roadassetmanagement". Provides A4/A3 × portrait/landscape with MoWT branding,
+# as app "roadassetmanagement". Provides A4/A3 × portrait/landscape with National Roads Authority branding,
 # north arrow, scale bar and legend.
 # ══════════════════════════════════════════════════════════════════════════════
 hosts:

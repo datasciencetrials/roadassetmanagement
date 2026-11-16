@@ -1,9 +1,9 @@
 """
-print_service.py — MoWT-branded PDF map printing.
+print_service.py — National Roads Authority-branded PDF map printing.
 
 Thin Django proxy in front of GeoServer's MapFish Print module (printing-ng),
 adding the Uganda Road Asset Management letterhead template. The actual rasterisation is done by
-GeoServer/MapFish; this view validates the request, injects the MoWT template
+GeoServer/MapFish; this view validates the request, injects the National Roads Authority template
 name, and streams the PDF back.
 
     POST /print/report.pdf   body: MapFish print spec JSON (layers, bbox, dpi)
@@ -50,11 +50,11 @@ def report_pdf(request):
     except Exception:
         return HttpResponseBadRequest("invalid JSON spec")
 
-    # Inject MoWT branding defaults into the spec attributes.
+    # Inject National Roads Authority branding defaults into the spec attributes.
     attrs = spec.setdefault("attributes", {})
     attrs.setdefault("title", "Uganda National Roads Management System")
     attrs.setdefault("subtitle", "National Roads Authority · Directorate of National Roads")
-    attrs.setdefault("credits", "GeoNode · GeoServer · MoWT/National Roads Authority")
+    attrs.setdefault("credits", "GeoNode · GeoServer · National Roads Authority/National Roads Authority")
     spec.setdefault("layout", "A4 landscape")
     spec["outputFormat"] = "pdf"
 

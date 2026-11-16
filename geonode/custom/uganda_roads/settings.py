@@ -1,6 +1,6 @@
 """
 Uganda National Roads Management System — GIS Enterprise
-Custom GeoNode settings: extends GeoNode defaults and applies MoWT branding.
+Custom GeoNode settings: extends GeoNode defaults and applies National Roads Authority branding.
 
 Activated via DJANGO_SETTINGS_MODULE=uganda_roads.settings (see .env / compose).
 """
@@ -50,7 +50,7 @@ GEONODE_CLIENT_LAYER_PREVIEW_LIBRARY = os.getenv(
     "GEONODE_CLIENT_LAYER_PREVIEW_LIBRARY", "mapstore")
 
 # Default metadata defaults for imported road datasets
-DEFAULT_KEYWORDS = ["Uganda", "roads", "MoWT", "DNR", "transport", "Road Asset Management"]
+DEFAULT_KEYWORDS = ["Uganda", "roads", "National Roads Authority", "DNR", "transport", "Road Asset Management"]
 DEFAULT_DATASET_CATEGORY = "transportation"
 
 # Allow the React Road Asset Management platform (GitHub Pages) to call GeoServer/GeoNode OGC APIs.

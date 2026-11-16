@@ -6,7 +6,7 @@
     <Name>road_condition</Name>
     <UserStyle>
       <Title>Pavement Condition by IRI</Title>
-      <Abstract>Roads coloured by condition class from IRI (m/km). Uganda MoWT/DNR.</Abstract>
+      <Abstract>Roads coloured by condition class from IRI (m/km). Uganda National Roads Authority/DNR.</Abstract>
       <FeatureTypeStyle>
         <!-- Good: IRI < 3.5 -->
         <Rule>

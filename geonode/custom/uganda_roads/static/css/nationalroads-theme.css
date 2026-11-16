@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════════════════════════════
-   MoWT GIS Enterprise theme for GeoNode — matches the React Road Asset Management platform palette.
+   National Roads Authority GIS Enterprise theme for GeoNode — matches the React Road Asset Management platform palette.
    Loaded via the site_base.html template override.
    ══════════════════════════════════════════════════════════════════════════════ */
 :root {
@@ -15,7 +15,7 @@
 
 body, .page-body { background: radial-gradient(ellipse at 20% 0%, #0d1b3e 0%, #050a1a 70%) fixed; color: var(--nationalroads-text); }
 
-/* Top navbar — MoWT dark glass */
+/* Top navbar — National Roads Authority dark glass */
 .navbar, header.header, #header {
   background: rgba(6,13,24,0.85) !important;
   backdrop-filter: blur(18px) saturate(160%);

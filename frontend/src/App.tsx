@@ -1,4 +1,3 @@
-import React from 'react'
 import ManualSearch from './components/ManualSearch'
 import ChartViewer from './components/ChartViewer'
 import ArisStatus from './components/ArisStatus'

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { MessageSquare, Send, Bot, User } from 'lucide-react';
+import { Send, Bot, User } from 'lucide-react';
 
 interface ChatMessage {
   role: 'user' | 'assistant';

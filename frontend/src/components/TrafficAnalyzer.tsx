@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Activity, TrendingUp, ArrowRight } from 'lucide-react';
+import { Activity, TrendingUp, } from 'lucide-react';
 
 const TrafficAnalyzer: React.FC = () => {
   const [baselineAadt, setBaselineAadt] = useState<number>(5000);

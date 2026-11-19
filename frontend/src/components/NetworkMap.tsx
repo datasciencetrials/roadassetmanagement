@@ -83,7 +83,7 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
     L.tileLayer(
       'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
       {
-        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics',
+        attribution: 'Tiles &copy; Esri · Source: Esri, Maxar, Earthstar Geographics',
         maxZoom: 18,
       }
     ).addTo(map);

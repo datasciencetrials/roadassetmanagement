@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
+  <rect x="0.5" y="0.5" width="599" height="319" fill="#FFFFFF" stroke="#E2E8F0" rx="8"/>
+  <text x="24" y="28" font-family="-apple-system, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Figure 1: National Road Surface &amp; Condition Profile (FY 2025/26)</text>
+  <text x="24" y="46" font-family="-apple-system, Arial, sans-serif" font-size="11" fill="#334155">National Road Network: 21,284.02 km · MOBICAP &amp; ROMDAS Survey Snapshot (17/11/2026)</text>
+
+  <text x="24" y="74" font-family="-apple-system, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">Surface Type Breakdown (21,284.02 km Total)</text>
+
+  <text x="24" y="98" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Paved Network</text>
+  <rect x="195" y="85" width="220" height="16" rx="4" fill="#E2E8F0"/>
+  <rect x="195" y="85" width="66" height="16" rx="4" fill="#0071E3"/>
+  <text x="425" y="98" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#0071E3">6,406.69 km (30.10%)</text>
+
+  <text x="24" y="124" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Unpaved Network</text>
+  <rect x="195" y="111" width="220" height="16" rx="4" fill="#E2E8F0"/>
+  <rect x="195" y="111" width="154" height="16" rx="4" fill="#D97706"/>
+  <text x="425" y="124" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#D97706">14,877.33 km (69.90%)</text>
+
+  <line x1="24" y1="144" x2="576" y2="144" stroke="#E2E8F0" stroke-width="1"/>
+
+  <text x="24" y="166" font-family="-apple-system, Arial, sans-serif" font-size="11.5" font-weight="700" fill="#0F172A">National Road Condition Breakdown (FY 2025/26)</text>
+
+  <text x="24" y="192" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Good Condition</text>
+  <rect x="195" y="179" width="220" height="16" rx="4" fill="#E2E8F0"/>
+  <rect x="195" y="179" width="130" height="16" rx="4" fill="#16A34A"/>
+  <text x="425" y="192" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#16A34A">12,610.00 km (59.20%)</text>
+
+  <text x="24" y="218" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Fair Condition</text>
+  <rect x="195" y="205" width="220" height="16" rx="4" fill="#E2E8F0"/>
+  <rect x="195" y="205" width="81" height="16" rx="4" fill="#0071E3"/>
+  <text x="425" y="218" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#0071E3">7,844.00 km (36.82%)</text>
+
+  <text x="24" y="244" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="600" fill="#0F172A">Poor Condition</text>
+  <rect x="195" y="231" width="220" height="16" rx="4" fill="#E2E8F0"/>
+  <rect x="195" y="231" width="9" height="16" rx="4" fill="#DC2626"/>
+  <text x="425" y="244" font-family="-apple-system, Arial, sans-serif" font-size="11" font-weight="700" fill="#DC2626">848.00 km (3.98%)</text>
+
+  <line x1="24" y1="274" x2="576" y2="274" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="300" y="298" text-anchor="middle" font-family="-apple-system, Arial, sans-serif" font-size="10.5" fill="#334155">Ministry of Works and Transport (MoWT), Department of National Roads · Unified SQL Database (17/11/2026)</text>
+</svg>

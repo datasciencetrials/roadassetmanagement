@@ -1,48 +1,83 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { BarChart2 } from 'lucide-react';
+import React, { useMemo, useState } from 'react';
+import { BarChart3 } from 'lucide-react';
+
+interface FigureItem {
+  id: string;
+  label: string;
+  title: string;
+  src: string;
+}
+
+const FIGURES: FigureItem[] = [
+  {
+    id: 'fig1',
+    label: 'Figure 1: Surface & Condition',
+    title: 'Figure 1: National Road Surface & Condition Profile (FY 2025/26)',
+    src: './chart1.svg',
+  },
+  {
+    id: 'fig2',
+    label: 'Figure 2: Classes & Vision 2040',
+    title: 'Figure 2: Functional Classification & Vision 2040 Preservation',
+    src: './chart2.svg',
+  },
+  {
+    id: 'fig3',
+    label: 'Figure 3: 552 Bridges (Separate)',
+    title: 'Figure 3: National Bridges Condition & Regional Profile (552 Bridges)',
+    src: './chart3.svg',
+  },
+  {
+    id: 'fig4',
+    label: 'Figure 4: 452 Major Culverts (Separate)',
+    title: 'Figure 4: National Major Culverts Condition & Regional Profile (452 Culverts)',
+    src: './chart4.svg',
+  },
+];
 
 const ChartViewer: React.FC = () => {
-  const [charts, setCharts] = useState<string[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [selected, setSelected] = useState<string>('all');
 
-  useEffect(() => {
-    const fetchCharts = async () => {
-      try {
-        const response = await axios.get('http://localhost:8000/api/charts');
-        setCharts(response.data.charts || []);
-      } catch (err) {
-        console.error(err);
-        setError('Failed to fetch generated charts.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchCharts();
-  }, []);
-
-  if (loading) return <div className="loading">Loading charts...</div>;
-  if (error) return <div className="error">{error}</div>;
-  if (charts.length === 0) return null;
+  const visibleFigures = useMemo(() => {
+    if (selected === 'all') return FIGURES;
+    return FIGURES.filter((f) => f.id === selected);
+  }, [selected]);
 
   return (
-    <div className="charts-container">
-      <h2><BarChart2 size={24} color="#3b82f6" /> Auto-Generated Analytics</h2>
+    <div className="charts-container card">
+      <div className="section-header-row">
+        <div className="section-title-group">
+          <BarChart3 size={20} color="#0071E3" />
+          <h2>Statutory Network &amp; Separate Structures Figures</h2>
+        </div>
+      </div>
+
+      <div className="pill-row">
+        <button
+          type="button"
+          className={`pill-btn ${selected === 'all' ? 'active' : ''}`}
+          onClick={() => setSelected('all')}
+        >
+          All Figures (4)
+        </button>
+        {FIGURES.map((f) => (
+          <button
+            key={f.id}
+            type="button"
+            className={`pill-btn ${selected === f.id ? 'active' : ''}`}
+            onClick={() => setSelected(f.id)}
+          >
+            {f.label}
+          </button>
+        ))}
+      </div>
+
       <div className="charts-grid">
-        {charts.map((chartName, idx) => (
-          <div key={idx} className="chart-card">
-            <img 
-              src={`http://localhost:8000/api/charts/${encodeURIComponent(chartName)}`} 
-              alt={chartName}
-              className="chart-image"
-              loading="lazy"
-            />
-            <div className="chart-title">
-              {chartName.replace('.png', '').replace(/_/g, ' ')}
-            </div>
-          </div>
+        {visibleFigures.map((f) => (
+          <figure key={f.id} className="chart-figure-card">
+            <figcaption>{f.title}</figcaption>
+            <img src={f.src} alt={f.title} className="chart-svg-img" />
+          </figure>
         ))}
       </div>
     </div>

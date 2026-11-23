@@ -108,11 +108,17 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
     mapRef.current = map;
     layerGroupRef.current = group;
 
+    const resizeObs = new ResizeObserver(() => {
+      map.invalidateSize();
+    });
+    resizeObs.observe(mapContainerRef.current);
+
     setTimeout(() => {
       map.invalidateSize();
     }, 250);
 
     return () => {
+      resizeObs.disconnect();
       map.remove();
       mapRef.current = null;
       layerGroupRef.current = null;
@@ -154,7 +160,7 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
       marker.bindPopup(popupHtml, { maxWidth: 320 });
       marker.on('click', () => {
         setSelectedInfo(
-          `${b.id} (${b.name}) on ${b.road} · ${b.region} Region (${b.station} Station) · Condition: ${b.condition} (Rating ${b.rating ?? 'N/A'}/9)`
+          `${b.id} (${b.name}) on ${b.road} · ${b.region} Region (${b.station} Station) · Condition: ${b.condition} (Rating ${b.rating ?? 'Not recorded'}/9)`
         );
       });
       marker.addTo(group);
@@ -320,14 +326,32 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
           <div className="legend-group">
             <div className="legend-heading">National Road Network Extent</div>
             <div className="legend-item">
-              <span className="legend-line solid" />
+              <span className="legend-line solid" style={{ borderTopColor: '#0071E3' }} />
               <span>Paved Roads: {AUTHORITATIVE_NETWORK.pavedKm.toLocaleString('en-GB', { minimumFractionDigits: 2 })} km (30.10%)</span>
             </div>
             <div className="legend-item">
-              <span className="legend-line dotted" />
+              <span className="legend-line dotted" style={{ borderTopColor: '#0071E3' }} />
               <span>Unpaved Roads: {AUTHORITATIVE_NETWORK.unpavedKm.toLocaleString('en-GB', { minimumFractionDigits: 2 })} km (69.90%)</span>
             </div>
-            <div className="legend-total">Total Extent: 21,284.02 km (100.00%)</div>
+            <div className="legend-item">
+              <span className="legend-line solid" style={{ borderTopColor: '#0071E3' }} />
+              <span>International Trunk (Class A): 2,604.65 km</span>
+            </div>
+            <div className="legend-item">
+              <span className="legend-line solid" style={{ borderTopColor: '#16A34A' }} />
+              <span>National Trunk (Class B): 2,845.27 km</span>
+            </div>
+            <div className="legend-item">
+              <span className="legend-line solid" style={{ borderTopColor: '#D97706' }} />
+              <span>Primary Roads (Class C): 15,689.54 km</span>
+            </div>
+            <div className="legend-item">
+              <span className="legend-line solid" style={{ borderTopColor: '#7C3AED' }} />
+              <span>Expressways (Class M): 144.56 km</span>
+            </div>
+            <div className="legend-total">
+              National Road Network 21,284.02 km (Paved 6,406.69 km, Unpaved 14,877.33 km)
+            </div>
           </div>
 
           <div className="legend-group">
@@ -339,7 +363,7 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
               </div>
             ))}
             <div className="legend-total">
-              552 Bridges · 452 Major Culverts (Separate Registers)
+              Bridges 552 · Major Culverts 452 (Separate Registers)
             </div>
           </div>
 

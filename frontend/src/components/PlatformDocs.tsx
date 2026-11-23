@@ -56,7 +56,7 @@ const DOC_SECTIONS: DocSection[] = [
     bullets: [
       'Pavement Condition & Roughness: MOBICAP(Road condition assesment tool) and ROMDAS(Roughness and rutting machine based testing).',
       'ARIS Vision 2040 Engine: Applies a 4.5% annual compound traffic growth rate over 14 years (2026 to 2040) with directional split 0.50 and heavy-vehicle factor 1.2.',
-      'Geospatial Basemap Standard: Esri World Imagery + Hybrid Labels (World_Boundaries_and_Places and World_Transportation overlays) with light-themed controls and popups.',
+      'Geospatial Basemap Standard: Esri World Imagery + Hybrid Labels (World Boundaries and Places and World Transportation overlays) with light-themed controls and popups.',
     ],
   },
 ];

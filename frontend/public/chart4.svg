@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320" width="100%" height="100%">
   <rect x="0.5" y="0.5" width="599" height="319" fill="#FFFFFF" stroke="#E2E8F0" rx="8"/>
   <text x="24" y="28" font-family="-apple-system, Arial, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Figure 4: Major Culverts Condition &amp; Regional Profile (452 Culverts)</text>
-  <text x="24" y="46" font-family="-apple-system, Arial, sans-serif" font-size="11" fill="#334155">Separate National Major Culverts Register across 6 Maintenance Regions &amp; 23 Stations (17/11/2026)</text>
+  <text x="24" y="46" font-family="-apple-system, Arial, sans-serif" font-size="11" fill="#334155">Separate National Major Culverts Register across 6 Maintenance Regions &amp; 23 Stations (19/11/2026)</text>
 
   <!-- Left Panel: Condition Breakdown -->
   <g transform="translate(24, 62)">
@@ -15,8 +15,8 @@
 
     <text x="12" y="75" font-family="-apple-system, Arial, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Satisfactory</text>
     <rect x="114" y="65" width="76" height="12" rx="3" fill="#E2E8F0"/>
-    <rect x="114" y="65" width="7" height="12" rx="3" fill="#0071E3"/>
-    <text x="196" y="75" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0071E3">39 (8.63%)</text>
+    <rect x="114" y="65" width="7" height="12" rx="3" fill="#0D9488"/>
+    <text x="196" y="75" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#0D9488">39 (8.63%)</text>
 
     <text x="12" y="102" font-family="-apple-system, Arial, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Marginal</text>
     <rect x="114" y="92" width="76" height="12" rx="3" fill="#E2E8F0"/>
@@ -25,13 +25,13 @@
 
     <text x="12" y="129" font-family="-apple-system, Arial, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Poor</text>
     <rect x="114" y="119" width="76" height="12" rx="3" fill="#E2E8F0"/>
-    <rect x="114" y="119" width="3" height="12" rx="1.5" fill="#EA580C"/>
-    <text x="196" y="129" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#EA580C">1 (0.22%)</text>
+    <rect x="114" y="119" width="3" height="12" rx="1.5" fill="#DC2626"/>
+    <text x="196" y="129" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#DC2626">1 (0.22%)</text>
 
     <text x="12" y="156" font-family="-apple-system, Arial, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Critical</text>
     <rect x="114" y="146" width="76" height="12" rx="3" fill="#E2E8F0"/>
-    <rect x="114" y="146" width="3" height="12" rx="1.5" fill="#DC2626"/>
-    <text x="196" y="156" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#DC2626">4 (0.88%)</text>
+    <rect x="114" y="146" width="3" height="12" rx="1.5" fill="#7F1D1D"/>
+    <text x="196" y="156" font-family="-apple-system, Arial, sans-serif" font-size="9.5" font-weight="700" fill="#7F1D1D">4 (0.88%)</text>
 
     <text x="12" y="183" font-family="-apple-system, Arial, sans-serif" font-size="10" font-weight="600" fill="#0F172A">Under Construction</text>
     <rect x="114" y="173" width="76" height="12" rx="3" fill="#E2E8F0"/>

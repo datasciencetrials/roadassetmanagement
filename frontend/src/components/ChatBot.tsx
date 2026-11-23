@@ -29,7 +29,7 @@ const TOPICS: TopicEntry[] = [
       'B162 (Atari Bridge) is located on Muyembe - Namalu (Class B National Trunk Road, Unpaved Gravel) at chainage 32.50 km in Eastern Region (Mbale Maintenance Station), crossing the Atari River (1.50021°, 34.44423°). Built in 1975 (7.0 m length, 7.6 m overall width, simply supported steel and concrete span), it holds an overall condition rating of 3 / 9 (Poor) with scour risk flagged.',
   },
   {
-    label: 'MOBICAP & ROMDAS Tools',
+    label: 'Survey Equipment Standards',
     content:
       'Field pavement condition and roughness surveys across the 21,284.02 km National Road Network are executed using MOBICAP(Road condition assesment tool) and ROMDAS(Roughness and rutting machine based testing). All measurements use metric units (km, m, mm, T, km/h) and decimal-degree coordinates.',
   },

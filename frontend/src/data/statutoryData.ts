@@ -87,18 +87,18 @@ export const BRIDGE_CONDITIONS = [
   { label: 'Good', count: 247, pct: 44.75, color: '#16A34A' },
   { label: 'Satisfactory', count: 71, pct: 12.86, color: '#0D9488' },
   { label: 'Marginal', count: 162, pct: 29.35, color: '#D97706' },
-  { label: 'Poor', count: 52, pct: 9.42, color: '#EA580C' },
-  { label: 'Critical', count: 13, pct: 2.36, color: '#DC2626' },
-  { label: 'Under Construction', count: 7, pct: 1.27, color: '#0071E3' },
+  { label: 'Poor', count: 52, pct: 9.42, color: '#DC2626' },
+  { label: 'Critical', count: 13, pct: 2.36, color: '#7F1D1D' },
+  { label: 'Under Construction', count: 7, pct: 1.27, color: '#7C3AED' },
 ];
 
 export const CULVERT_CONDITIONS = [
   { label: 'Good', count: 403, pct: 89.16, color: '#16A34A' },
   { label: 'Satisfactory', count: 39, pct: 8.63, color: '#0D9488' },
   { label: 'Marginal', count: 4, pct: 0.88, color: '#D97706' },
-  { label: 'Poor', count: 1, pct: 0.22, color: '#EA580C' },
-  { label: 'Critical', count: 4, pct: 0.88, color: '#DC2626' },
-  { label: 'Under Construction', count: 1, pct: 0.22, color: '#0071E3' },
+  { label: 'Poor', count: 1, pct: 0.22, color: '#DC2626' },
+  { label: 'Critical', count: 4, pct: 0.88, color: '#7F1D1D' },
+  { label: 'Under Construction', count: 1, pct: 0.22, color: '#7C3AED' },
 ];
 
 export const REGIONAL_BRIDGES = [
@@ -133,7 +133,7 @@ export const CONDITION_COLORS: Record<string, string> = {
   Good: '#16A34A',
   Satisfactory: '#0D9488',
   Marginal: '#D97706',
-  Poor: '#EA580C',
-  Critical: '#DC2626',
-  'Under Construction': '#0071E3',
+  Poor: '#DC2626',
+  Critical: '#7F1D1D',
+  'Under Construction': '#7C3AED',
 };

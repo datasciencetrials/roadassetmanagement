@@ -29,7 +29,7 @@ const MANUALS: ManualItem[] = [
     text: `The separate National Major Culverts Register (as at ${SNAPSHOT_DATE}) comprises 452 Major Culverts: Good 403 (89.16%), Satisfactory 39 (8.63%), Marginal 4 (0.88%), Poor 1 (0.22%), Critical 4 (0.88%), and Under Construction 1 (0.22%). Regional distribution comprises Western 96, Eastern 82, Northern 76, Southern 75, North Eastern 69, and Central 54 across the 21,284.02 km network.`,
   },
   {
-    category: 'MOBICAP & ROMDAS Standards',
+    category: 'Condition Survey Standards',
     title: 'Condition Survey & Equipment Standards',
     page: 'Page 29',
     text: `Field condition monitoring across the 21,284.02 km National Road Network uses MOBICAP(Road condition assesment tool) and ROMDAS(Roughness and rutting machine based testing) in metric units (km, m, mm, T, km/h) with decimal-degree coordinates, synchronised to the Unified SQL Database with automated weekly refresh (snapshot ${SNAPSHOT_DATE}).`,

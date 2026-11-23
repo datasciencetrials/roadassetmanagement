@@ -26,8 +26,8 @@ const NODES: MindNode[] = [
   {
     id: 'surface',
     label: 'Surface & Condition',
-    sublabel: '6,406.69 km Paved · 14,877.33 km Unpaved',
-    x: 160,
+    sublabel: '30.10% Paved · 69.90% Unpaved',
+    x: 170,
     y: 95,
     color: '#16A34A',
     parentId: 'root',
@@ -38,7 +38,7 @@ const NODES: MindNode[] = [
     id: 'classes',
     label: 'Functional Classes',
     sublabel: 'Class A, B, C & M',
-    x: 150,
+    x: 165,
     y: 255,
     color: '#0D9488',
     parentId: 'root',
@@ -48,8 +48,8 @@ const NODES: MindNode[] = [
   {
     id: 'tools',
     label: 'Survey Tools',
-    sublabel: 'MOBICAP & ROMDAS',
-    x: 165,
+    sublabel: 'Field Condition & Roughness',
+    x: 170,
     y: 410,
     color: '#D97706',
     parentId: 'root',
@@ -71,7 +71,7 @@ const NODES: MindNode[] = [
     id: 'culverts',
     label: '452 Major Culverts',
     sublabel: 'Separate Register',
-    x: 805,
+    x: 795,
     y: 255,
     color: '#7C3AED',
     parentId: 'root',
@@ -170,7 +170,7 @@ const MindMap: React.FC = () => {
 
             {NODES.map((node) => {
               const isSelected = selectedId === node.id;
-              const boxW = node.id === 'root' ? 190 : 210;
+              const boxW = node.id === 'root' ? 190 : 228;
               const boxH = 56;
               return (
                 <g

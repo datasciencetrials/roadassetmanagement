@@ -18,7 +18,7 @@ const NODES: MindNode[] = [
     label: 'National RAMS',
     sublabel: '21,284.02 km Network',
     x: 480,
-    y: 250,
+    y: 265,
     color: '#0071E3',
     detail:
       'NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION: View-only National Road Asset Management System synchronised with the Unified SQL Database.',
@@ -27,8 +27,8 @@ const NODES: MindNode[] = [
     id: 'surface',
     label: 'Surface & Condition',
     sublabel: '30.10% Paved · 69.90% Unpaved',
-    x: 170,
-    y: 95,
+    x: 165,
+    y: 80,
     color: '#16A34A',
     parentId: 'root',
     detail:
@@ -39,7 +39,7 @@ const NODES: MindNode[] = [
     label: 'Functional Classes',
     sublabel: 'Class A, B, C & M',
     x: 165,
-    y: 255,
+    y: 205,
     color: '#0D9488',
     parentId: 'root',
     detail:
@@ -49,30 +49,41 @@ const NODES: MindNode[] = [
     id: 'tools',
     label: 'Survey Tools',
     sublabel: 'Field Condition & Roughness',
-    x: 170,
-    y: 410,
+    x: 165,
+    y: 330,
     color: '#D97706',
     parentId: 'root',
     detail:
       'Field surveys execute using MOBICAP(Road condition assesment tool) and ROMDAS(Roughness and rutting machine based testing) in metric units and decimal-degree coordinates.',
   },
   {
+    id: 'valuation',
+    label: '2026 Asset Valuation',
+    sublabel: 'USD 7,782.38 Mn Portfolio',
+    x: 165,
+    y: 455,
+    color: '#0071E3',
+    parentId: 'root',
+    detail:
+      '2026 National Asset Valuation: Road Network CDRC USD 6,735.59 Mn (Paved USD 5,918.27 Mn; Unpaved USD 817.32 Mn). Including 552 Bridges (USD 798.88 Mn) and 452 Major Culverts (USD 247.91 Mn), portfolio CDRC reaches USD 7,782.38 Mn (UGX 28,794.82 Bn) vs USD 7,736.96 Mn published.',
+  },
+  {
     id: 'bridges',
     label: '552 Bridges (Separate)',
     sublabel: 'Includes B162 Atari Bridge',
-    x: 790,
-    y: 95,
+    x: 795,
+    y: 105,
     color: '#DC2626',
     parentId: 'root',
     detail:
-      '552 Bridges: Good 247 (44.75%), Satisfactory 71 (12.86%), Marginal 162 (29.35%), Poor 52 (9.42%), Critical 13 (2.36%), Under Construction 7 (1.27%). Includes B162 Atari Bridge (Muyembe - Namalu, Class B, Poor, Rating 3/9).',
+      '552 Bridges: Good 247 (44.75%), Satisfactory 71 (12.86%), Marginal 162 (29.35%), Poor 52 (9.42%), Critical 13 (2.36%), Under Construction 7 (1.27%). Includes B162 Atari Bridge (Muyembe - Namalu, Class B, Poor, Rating 2/9).',
   },
   {
     id: 'culverts',
     label: '452 Major Culverts',
     sublabel: 'Separate Register',
     x: 795,
-    y: 255,
+    y: 265,
     color: '#7C3AED',
     parentId: 'root',
     detail:
@@ -82,9 +93,9 @@ const NODES: MindNode[] = [
     id: 'vision2040',
     label: 'Vision 2040 & Regions',
     sublabel: '6 Regions · 23 Stations',
-    x: 790,
-    y: 410,
-    color: '#0071E3',
+    x: 795,
+    y: 425,
+    color: '#16A34A',
     parentId: 'root',
     detail:
       'ARIS Vision 2040 Compound Growth Engine (4.5% p.a. to 2040), HDM-4 deterioration, AASHTO (SNeff), and Esri World Imagery + Hybrid Labels mapping across 6 Maintenance Regions and 23 Maintenance Stations.',
@@ -148,7 +159,7 @@ const MindMap: React.FC = () => {
       <div className="mindmap-layout">
         <div className="mindmap-canvas-wrap">
           <svg
-            viewBox="0 0 960 500"
+            viewBox="0 0 960 530"
             className="mindmap-svg"
             style={{ transform: `scale(${zoom})`, transformOrigin: 'center center' }}
             role="img"

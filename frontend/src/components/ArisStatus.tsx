@@ -33,7 +33,7 @@ const TOPOLOGY_SPECS: Record<string, SpecDetail> = {
     metrics: [
       'Authoritative Extent: 21,284.02 km across 6 Maintenance Regions and 23 Maintenance Stations',
       'Compounded Traffic Growth: 4.5% per annum baseline weighted growth to 2040',
-      'Asset Valuation: Aligned with FY 2026/27 national asset valuation baseline',
+      'Asset Valuation: Road Network CDRC USD 6,735.59 Mn; Portfolio USD 7,782.38 Mn restated (USD 7,736.96 Mn published)',
     ],
   },
   'Multi-Criteria Prioritisation (MCA)': {
@@ -41,7 +41,7 @@ const TOPOLOGY_SPECS: Record<string, SpecDetail> = {
     summary: 'Ranks periodic maintenance, rehabilitation, and bridge/culvert interventions using condition, traffic, connectivity, and climate resilience weights.',
     metrics: [
       'Critical Structures Flagged: 13 Critical & 52 Poor Bridges; 4 Critical & 1 Poor Major Culvert',
-      'Priority Corridor Example: B162 Atari Bridge (Muyembe - Namalu, Class B, Poor, Rating 3)',
+      'Priority Corridor Example: B162 Atari Bridge (Muyembe - Namalu, Class B, Poor, Rating 2/9)',
       'Reporting Basis: Strictly physical km and % shares',
     ],
   },
@@ -68,9 +68,9 @@ const TOPOLOGY_SPECS: Record<string, SpecDetail> = {
 const TRAFFIC_SPECS: Record<string, SpecDetail> = {
   'ARIS Vision 2040 Compound Growth Engine (4.5% p.a.)': {
     title: 'ARIS Vision 2040 Compound Growth Engine (4.5% p.a.)',
-    summary: 'Projects 2026 baseline Annual Average Daily Traffic (AADT) across 14 years to 2040 using a 4.5% annual compound growth factor (1.96x).',
+    summary: 'Projects 2026 baseline Annual Average Daily Traffic (AADT) across 14 years to 2040 using a 4.5% annual compound growth factor (1.96x HV-adjusted).',
     metrics: [
-      'National Weighted Baseline (2026): 5,000 veh/day -> 2040 Projection: 9,801 veh/day',
+      'National Weighted Baseline (2026): 5,000 veh/day -> 2040 Projection: 9,806 veh/day',
       'Directional Split: 0.50 peak direction allocation with heavy vehicle equivalence factor 1.2',
       'Horizon: 2026 to 2040 as per Vision 2040',
     ],
@@ -80,7 +80,7 @@ const TRAFFIC_SPECS: Record<string, SpecDetail> = {
     summary: 'Cross-border strategic corridors linking Uganda to regional East African trade gateways.',
     metrics: [
       'Physical Extent: 2,604.65 km (12.24% of National Road Network)',
-      'Representative Corridor AADT (2026): 4,500 veh/day -> 2040 Projection: 8,821 veh/day',
+      'Representative Corridor AADT (2026): 4,500 veh/day -> 2040 Projection: 8,825 veh/day',
       'Survey Coverage: ROMDAS(Roughness and rutting machine based testing) & MOBICAP(Road condition assesment tool)',
     ],
   },
@@ -89,7 +89,7 @@ const TRAFFIC_SPECS: Record<string, SpecDetail> = {
     summary: 'Principal inter-regional highways connecting major urban centres and administrative hubs.',
     metrics: [
       'Physical Extent: 2,845.27 km (13.37% of National Road Network)',
-      'Representative Corridor AADT (2026): 2,800 veh/day -> 2040 Projection: 5,489 veh/day',
+      'Representative Corridor AADT (2026): 2,800 veh/day -> 2040 Projection: 5,491 veh/day',
       'Key Structure Example: B162 Atari Bridge on Muyembe - Namalu (Eastern Region, Mbale Station)',
     ],
   },
@@ -98,7 +98,7 @@ const TRAFFIC_SPECS: Record<string, SpecDetail> = {
     summary: 'Extensive feeder and agricultural-access network forming the largest share of the National Road Network.',
     metrics: [
       'Physical Extent: 15,689.54 km (73.72% of National Road Network)',
-      'Representative Corridor AADT (2026): 1,200 veh/day -> 2040 Projection: 2,352 veh/day',
+      'Representative Corridor AADT (2026): 1,200 veh/day -> 2040 Projection: 2,353 veh/day',
       'Surface Composition: Predominantly unpaved gravel corridors targeted for progressive upgrading',
     ],
   },
@@ -107,7 +107,7 @@ const TRAFFIC_SPECS: Record<string, SpecDetail> = {
     summary: 'High-speed, access-controlled dual carriageways serving high-density metropolitan and airport corridors.',
     metrics: [
       'Physical Extent: 144.56 km (0.68% of National Road Network)',
-      'Representative Corridor AADT (2026): 8,500 veh/day -> 2040 Projection: 16,662 veh/day',
+      'Representative Corridor AADT (2026): 8,500 veh/day -> 2040 Projection: 16,670 veh/day',
       'Surface Standard: 100% Paved high-capacity bituminous/concrete carriageway',
     ],
   },

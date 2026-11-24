@@ -33,6 +33,12 @@ const FIGURES: FigureItem[] = [
     title: 'Figure 4: National Major Culverts Condition & Regional Profile (452 Culverts)',
     src: './chart4.svg',
   },
+  {
+    id: 'fig5',
+    label: 'Figure 5: 2026 Asset Valuation',
+    title: 'Figure 5: National Road & Structure Asset Valuation (FY 2025/26)',
+    src: './chart5.svg',
+  },
 ];
 
 const ChartViewer: React.FC = () => {
@@ -58,7 +64,7 @@ const ChartViewer: React.FC = () => {
           className={`pill-btn ${selected === 'all' ? 'active' : ''}`}
           onClick={() => setSelected('all')}
         >
-          All Figures (4)
+          All Figures (5)
         </button>
         {FIGURES.map((f) => (
           <button

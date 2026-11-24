@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import ArisStatus from './components/ArisStatus';
+import AssetValuation from './components/AssetValuation';
 import NetworkMap from './components/NetworkMap';
 import SeparateStructures from './components/SeparateStructures';
 import ChatBot from './components/ChatBot';
@@ -14,6 +15,7 @@ import './App.css';
 type TabId =
   | 'all'
   | 'kpis'
+  | 'valuation'
   | 'map'
   | 'structures'
   | 'ai-traffic'
@@ -24,6 +26,7 @@ type TabId =
 const TABS: { id: TabId; label: string }[] = [
   { id: 'all', label: 'All Dashboard Modules' },
   { id: 'kpis', label: 'Engine & Network KPIs (21,284.02 km)' },
+  { id: 'valuation', label: '2026 Asset Valuation (USD 7.78 Bn)' },
   { id: 'map', label: 'Esri Imagery & Hybrid Map' },
   { id: 'structures', label: 'Separate Structures (552 Bridges · 452 Culverts)' },
   { id: 'ai-traffic', label: 'AI Briefings & Vision 2040 Traffic Analyser' },
@@ -85,6 +88,12 @@ function App() {
         {show('kpis') && (
           <section>
             <ArisStatus />
+          </section>
+        )}
+
+        {show('valuation') && (
+          <section>
+            <AssetValuation />
           </section>
         )}
 

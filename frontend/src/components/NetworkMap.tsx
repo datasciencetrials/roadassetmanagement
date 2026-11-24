@@ -214,7 +214,7 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
         const mk = markerByIdRef.current['B162'];
         if (mk) mk.openPopup();
         setSelectedInfo(
-          `Focused B162: Atari Bridge on Muyembe - Namalu (Class B, Eastern Region, Mbale Station, Poor condition, Rating 3/9)`
+          `Focused B162: Atari Bridge on Muyembe - Namalu (Class B, Eastern Region, Mbale Station, ${target.condition} condition, Rating ${target.rating ?? 'Not recorded'}/9)`
         );
       }
     }, 150);
@@ -364,6 +364,9 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
             ))}
             <div className="legend-total">
               Bridges 552 · Major Culverts 452 (Separate Registers)
+            </div>
+            <div className="legend-total" style={{ color: '#0071E3' }}>
+              Active Map View: {filteredBridges.length} Bridges · {filteredCulverts.length} Culverts
             </div>
           </div>
 

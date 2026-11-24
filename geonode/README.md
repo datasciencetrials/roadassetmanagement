@@ -4,7 +4,7 @@ A fully-branded **GeoNode 4.x** enterprise GIS platform for the Uganda National
 Road Network — Django + GeoServer + PostGIS + NGINX + Celery + Redis, serving
 **WMS/WFS/WCS** OGC services, a web map editor (MapStore), metadata management,
 user/role management and a REST API. It publishes the road-network layers held in
-`G:\My Drive\National Roads Authority\Uganda National Road Network Repository` and feeds them into the
+`G:\My Drive\National Road Network Administration\Uganda National Road Network Repository` and feeds them into the
 React Road Asset Management platform as live WMS layers.
 
 > This folder is configuration + scripts. GeoNode runs in Docker; the React
@@ -73,20 +73,20 @@ hosted, and the deployed site will use it.
 ## Branding (already applied)
 - `custom/uganda_roads/settings.py` — extends GeoNode, registers the branding app,
   centres the default map on Uganda, sets CORS for the GitHub Pages origins.
-- `custom/uganda_roads/templates/site_base.html` — National Roads Authority logo + title header, DNR/National Roads Authority footer.
+- `custom/uganda_roads/templates/site_base.html` — National Road Network Administration logo + title header, National Road Network Administration footer.
 - `custom/uganda_roads/static/css/nationalroads-theme.css` — palette matching the React platform.
-- `custom/uganda_roads/static/uganda_roads/img/nationalroads.jpg` — National Roads Authority logo.
+- `custom/uganda_roads/static/uganda_roads/img/nationalroads.jpg` — National Road Network Administration logo.
 
 ## Layout
 ```
 geonode/
 ├── docker-compose.yml      # full stack (geonode, geoserver, db, nginx, celery, redis)
-├── .env                    # all config + National Roads Authority branding vars
+├── .env                    # all config + National Road Network Administration branding vars
 ├── layers_config.yml       # layer inventory (from the G: shapefiles)
 ├── styles/                 # GeoServer SLD styles
 │   ├── road_network.sld    road_condition.sld  bridges.sld  traffic_stations.sld
 ├── scripts/import_layers.sh
-├── custom/uganda_roads/    # National Roads Authority branding Django app (settings, templates, static)
+├── custom/uganda_roads/    # National Road Network Administration branding Django app (settings, templates, static)
 └── data/                   # staging area (populated by import script; git-ignored)
 ```
 

@@ -488,6 +488,10 @@
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12) !important;
 }
 
+.leaflet-popup-close-button {
+  color: #0F172A !important;
+}
+
 .national_roads-light-popup h4 {
   margin: 0.35rem 0;
   font-size: 0.94rem;

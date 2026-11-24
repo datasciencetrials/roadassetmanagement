@@ -36,7 +36,7 @@ spec:
             - secretRef: { name: roadassetmanagement-api-secrets }
           env:
             - { name: PORT, value: "8787" }
-            - { name: CORS_ORIGIN, value: "https://networkengineringmowt-ai.github.io" }
+            - { name: CORS_ORIGIN, value: "https://datasciencetrials.github.io" }
             - { name: DRIVE_DATA_DIR, value: "/data/captures" }
           volumeMounts:
             - { name: roadassetmanagement-api-data, mountPath: /data }

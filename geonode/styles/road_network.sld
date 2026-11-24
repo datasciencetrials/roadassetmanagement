@@ -6,7 +6,7 @@
     <Name>road_network</Name>
     <UserStyle>
       <Title>National Road Network by Class</Title>
-      <Abstract>Roads coloured by functional class (A/B/C/M). Uganda National Roads Authority/DNR.</Abstract>
+      <Abstract>Roads coloured by functional class (A/B/C/M). Uganda National Road Network Administration.</Abstract>
       <FeatureTypeStyle>
         <!-- Class A — primary national (red) -->
         <Rule>

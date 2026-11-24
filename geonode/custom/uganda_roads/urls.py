@@ -7,8 +7,8 @@ from django.views.generic import TemplateView
 from .views import arcgis_rest, routing, print_service
 
 urlpatterns = [
-    # National Roads Authority portal home (ArcGIS "Portal" equivalent)
-    path("", TemplateView.as_view(template_name="geonode/index.html"), name="mowt_home"),
+    # National Roads Administration portal home (ArcGIS "Portal" equivalent)
+    path("", TemplateView.as_view(template_name="geonode/index.html"), name="rams_home"),
 
     # ArcGIS Server REST API emulation
     path("arcgis/rest/services/<str:service>/MapServer", arcgis_rest._service_root),

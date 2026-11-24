@@ -267,13 +267,13 @@ def export_database_to_json():
         print(f"  [OK] Infrastructure coverage ({len(infrastructure_data)} items)")
 
         # Network summary for all sections
-        # Official DNR 2026 total network length (source: Department of National Roads official inventory)
-        official_total_km = 21302.0
+        # Official 2026 total network length (authoritative national inventory)
+        official_total_km = 21284.02
 
         network_summary = {
             'total_links': total_links,
             'total_length_km': total_length_km,
-            'official_total_km': official_total_km,  # Department of National Roads 2026 official
+            'official_total_km': official_total_km,  # Authoritative 2026 official
             'regions_count': regions_with_data,
             'stations_count': stations_with_data,
             'measured_links': measured_links,

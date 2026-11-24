@@ -1,7 +1,7 @@
 # ══════════════════════════════════════════════════════════════════════════════
 # MapFish Print template — Uganda Road Asset Management letterhead. Mount into the GeoServer
 # printing module data dir (printing-ng extension). Referenced by print_service.py
-# as app "roadassetmanagement". Provides A4/A3 × portrait/landscape with National Roads Authority branding,
+# as app "roadassetmanagement". Provides A4/A3 × portrait/landscape with National Road Network Administration branding,
 # north arrow, scale bar and legend.
 # ══════════════════════════════════════════════════════════════════════════════
 hosts:
@@ -26,14 +26,14 @@ layouts:
   "A4 landscape":
     metaData:
       title: "Uganda National Roads Management System"
-      author: "National Roads Authority · DNR"
+      author: "National Road Network Administration"
     mainPage:
       pageSize: A4
       rotation: false
       landscape: true
       items:
         - !text  { text: "Uganda National Roads Management System", fontSize: 16, font: Helvetica-Bold, spacingAfter: 2 }
-        - !text  { text: "National Roads Authority · Directorate of National Roads", fontSize: 9, spacingAfter: 6 }
+        - !text  { text: "National Road Network Administration · Directorate of National Roads", fontSize: 9, spacingAfter: 6 }
         - !map   { spacingAfter: 6, height: 420, absoluteWidth: 770 }
         - !scalebar { type: bar, maxSize: 180, barBgColor: white, fontSize: 8, units: m, intervals: 5 }
         - !legends { maxIconWidth: 8, maxIconHeight: 8, fontSize: 8, defaultScale: 1.0 }
@@ -45,7 +45,7 @@ layouts:
       landscape: false
       items:
         - !text  { text: "Uganda National Roads Management System", fontSize: 16, font: Helvetica-Bold }
-        - !text  { text: "National Roads Authority · DNR", fontSize: 9, spacingAfter: 6 }
+        - !text  { text: "National Road Network Administration", fontSize: 9, spacingAfter: 6 }
         - !map   { spacingAfter: 6, height: 560, absoluteWidth: 520 }
         - !scalebar { type: bar, maxSize: 180, fontSize: 8, units: m, intervals: 5 }
         - !legends { maxIconWidth: 8, maxIconHeight: 8, fontSize: 8 }
@@ -56,7 +56,7 @@ layouts:
       landscape: true
       items:
         - !text  { text: "Uganda National Roads Management System", fontSize: 20, font: Helvetica-Bold }
-        - !text  { text: "National Roads Authority · Directorate of National Roads", fontSize: 11, spacingAfter: 8 }
+        - !text  { text: "National Road Network Administration · Directorate of National Roads", fontSize: 11, spacingAfter: 8 }
         - !map   { spacingAfter: 8, height: 640, absoluteWidth: 1120 }
         - !scalebar { type: bar, maxSize: 250, fontSize: 9, units: m, intervals: 5 }
         - !legends { maxIconWidth: 10, maxIconHeight: 10, fontSize: 9 }

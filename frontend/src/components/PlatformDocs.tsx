@@ -59,6 +59,18 @@ const DOC_SECTIONS: DocSection[] = [
       'Geospatial Basemap Standard: Esri World Imagery + Hybrid Labels (World Boundaries and Places and World Transportation overlays) with light-themed controls and popups.',
     ],
   },
+  {
+    id: 'valuation',
+    title: '5. 2026 National Asset Valuation Methodology',
+    badge: 'USD 7.78 Bn',
+    summary:
+      'Computes Current Replacement Cost (CRC), Current Depreciated Replacement Cost (CDRC), and Asset Loss across paved roads, unpaved roads, 552 bridges, and 452 major culverts.',
+    bullets: [
+      'Road Network (FY 2025/26): Paved CDRC USD 5,918.27 Mn (unit rate USD 1.20 Mn/km, condition factor 0.77) and Unpaved CDRC USD 817.32 Mn (unit rate USD 0.098 Mn/km, condition factor 0.56), totaling USD 6,735.59 Mn.',
+      'Separate Structures: Restated to October 2026 register, 552 Bridges carry USD 798.88 Mn CDRC (CRC USD 1,000.18 Mn) and 452 Major Culverts carry USD 247.91 Mn CDRC (CRC USD 338.92 Mn).',
+      'Portfolio Totals: USD 7,782.38 Mn (UGX 28,794.82 Bn) restated to 552 bridges and 452 culverts, reconciled with USD 7,736.96 Mn (UGX 28,626.77 Bn) on the published 521/451 structure count.',
+    ],
+  },
 ];
 
 const PlatformDocs: React.FC = () => {
@@ -82,7 +94,7 @@ const PlatformDocs: React.FC = () => {
           className={`pill-btn ${activeDoc === 'all' ? 'active' : ''}`}
           onClick={() => setActiveDoc('all')}
         >
-          All Documentation Sections (4)
+          All Documentation Sections (5)
         </button>
         {DOC_SECTIONS.map((d) => (
           <button

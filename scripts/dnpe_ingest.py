@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 r"""
-Ingest P:\UNRA2\DNPE file repository into the National Roads Authority Pavement Management System database.
+Ingest repository files into the National Road Network Pavement Management System database.
 
 Features:
 - Recursive discovery and registration into pms_source_files (repository_group='dnpe_data').
@@ -44,7 +44,7 @@ except ImportError:
 
 DB_PATH = Path(r"D:\tmp\uganda-build\traffic_platform.db")
 
-DNPE_ROOT = Path(r"P:\UNRA2\DNPE")
+DNPE_ROOT = Path(os.environ.get("RAMS_DATA_ROOT", "./data_source"))
 
 SKIP_EXTENSIONS = {".tmp", ".lnk", ".bak", ".vfgj"}
 LARGE_ARCHIVE_EXTENSIONS = {".zip", ".rar", ".7z", ".tar", ".gz"}

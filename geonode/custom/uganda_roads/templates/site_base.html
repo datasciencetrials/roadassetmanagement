@@ -1,7 +1,7 @@
 {# ════════════════════════════════════════════════════════════════════════════
-   National Roads Authority-branded base template override for GeoNode.
+   National Road Network Administration-branded base template override for GeoNode.
    Extends GeoNode's geonode_base and injects the Uganda Road Asset Management branding:
-   National Roads Authority logo + title in the header, National Roads Authority theme CSS, and a DNR/National Roads Authority footer.
+   National Road Network Administration logo + title in the header, National Road Network Administration theme CSS, and a National Road Network Administration footer.
    ════════════════════════════════════════════════════════════════════════════ #}
 {% extends "geonode_base.html" %}
 {% load static %}
@@ -17,7 +17,7 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="/">
-          <img class="nationalroads-logo" src="{% static 'uganda_roads/img/nationalroads.jpg' %}" alt="National Roads Authority" />
+          <img class="nationalroads-logo" src="{% static 'uganda_roads/img/nationalroads.jpg' %}" alt="National Road Network Administration" />
           <strong class="gn-brand-title">Uganda Road Asset Management · GIS Enterprise</strong>
         </a>
       </div>
@@ -37,7 +37,7 @@
   <footer class="footer nationalroads-footer">
     <div>
       <strong>Uganda National Roads Management System — GIS Enterprise</strong><br/>
-      National Roads Authority · Directorate of National Roads (National Roads Authority)<br/>
+      National Road Network Administration · Directorate of National Roads (National Road Network Administration)<br/>
       OGC services: <a href="/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities">WMS</a> ·
       <a href="/geoserver/ows?service=wfs&version=2.0.0&request=GetCapabilities">WFS</a>
     </div>

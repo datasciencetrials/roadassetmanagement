@@ -50,14 +50,13 @@ GEONODE_CLIENT_LAYER_PREVIEW_LIBRARY = os.getenv(
     "GEONODE_CLIENT_LAYER_PREVIEW_LIBRARY", "mapstore")
 
 # Default metadata defaults for imported road datasets
-DEFAULT_KEYWORDS = ["Uganda", "roads", "National Roads Authority", "DNR", "transport", "Road Asset Management"]
+DEFAULT_KEYWORDS = ["Uganda", "roads", "National Road Network", "transport", "Road Asset Management"]
 DEFAULT_DATASET_CATEGORY = "transportation"
 
 # Allow the React Road Asset Management platform (GitHub Pages) to call GeoServer/GeoNode OGC APIs.
 CORS_ALLOW_ALL_ORIGINS = os.getenv("CORS_ALLOW_ALL", "True") == "True"
 CORS_ORIGIN_WHITELIST = (
-    "https://networkengineringmowt-ai.github.io",
-    "https://priscananjehe1996.github.io",
+    "https://datasciencetrials.github.io",
     "http://localhost:5173",
     "http://localhost:5174",
 )

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# One-time setup of the RAMS backend on the ministry server (Linux or WSL2).
+# One-time setup of the RAMS backend on the national road asset server (Linux or WSL2).
 # Run as root/sudo:  bash install_k3s.sh
 set -euo pipefail
 

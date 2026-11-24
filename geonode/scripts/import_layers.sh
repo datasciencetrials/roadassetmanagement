@@ -60,7 +60,7 @@ fi
 
 echo "▶ Importing into GeoNode (importlayers)…"
 docker compose exec -T "$GEONODE_SVC" python manage.py importlayers /import_data \
-  -v 2 -i -o --keywords "Uganda,roads,National Roads Authority,DNR" --category transportation || {
+  -v 2 -i -o --keywords "Uganda,roads,National Road Network,RAMS" --category transportation || {
     echo "  importlayers reported issues — check 'docker compose logs $GEONODE_SVC'"; }
 
 echo "▶ Publishing SLD styles to GeoServer…"

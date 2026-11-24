@@ -26,7 +26,12 @@ const TOPICS: TopicEntry[] = [
   {
     label: 'B162 Atari Bridge',
     content:
-      'B162 (Atari Bridge) is located on Muyembe - Namalu (Class B National Trunk Road, Unpaved Gravel) at chainage 32.50 km in Eastern Region (Mbale Maintenance Station), crossing the Atari River (1.50021°, 34.44423°). Built in 1975 (7.0 m length, 7.6 m overall width, simply supported steel and concrete span), it holds an overall condition rating of 3 / 9 (Poor) with scour risk flagged.',
+      'B162 (Atari Bridge) is located on Muyembe - Namalu (Class B National Trunk Road, Unpaved Gravel) at chainage 32.50 km in Eastern Region (Mbale Maintenance Station), crossing the Atari River (1.50021°, 34.44423°). Built in 1975 (7.0 m length, 7.6 m overall width, simply supported steel and concrete span), it holds an overall condition rating of 2 / 9 (Poor) with scour risk flagged.',
+  },
+  {
+    label: '2026 Asset Valuation',
+    content:
+      'From the 2026 National Asset Valuation (FY 2025/26): National Road Network CDRC is USD 6,735.59 Mn (Paved USD 5,918.27 Mn at 77% condition; Unpaved USD 817.32 Mn at 56% condition), up from USD 3,579.00 Mn in FY 2017/18. Including separate structures, combined portfolio CDRC stands at USD 7,736.96 Mn (published 521 bridges / 451 culverts) and USD 7,782.38 Mn / UGX 28,794.82 Bn (restated to 552 Bridges and 452 Major Culverts).',
   },
   {
     label: 'Survey Equipment Standards',

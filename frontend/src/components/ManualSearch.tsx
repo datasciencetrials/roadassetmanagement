@@ -46,15 +46,21 @@ const MANUALS: ManualItem[] = [
     page: 'Page 75',
     text: 'NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION operates across 6 Maintenance Regions (Central, Eastern, North Eastern, Northern, Southern, Western) and 23 Maintenance Stations: Arua, Fort Portal, Gulu, Hoima, Ibanda, Jinja, Kabale, Kampala, Kasese, Kitgum, Kotido, Lira, Luwero, Masaka, Masindi, Mbale, Mbarara, Moroto, Moyo, Mpigi, Mubende, Soroti, and Tororo.',
   },
+  {
+    category: '2026 Asset Valuation',
+    title: 'National Road & Structure Asset Valuation (FY 2025/26)',
+    page: 'Page 88',
+    text: '2026 National Asset Valuation establishes Road Network CDRC at USD 6,735.59 Mn (Paved USD 5,918.27 Mn, CRC USD 7,686.06 Mn; Unpaved USD 817.32 Mn, CRC USD 1,459.88 Mn). Separate structure values add USD 798.88 Mn for 552 Bridges and USD 247.91 Mn for 452 Major Culverts (restated basis), yielding a total portfolio asset value of USD 7,782.38 Mn (UGX 28,794.82 Bn) compared with USD 7,736.96 Mn published.',
+  },
 ];
 
-const CATEGORIES = ['All Statutory Manuals (6)', ...MANUALS.map((m) => m.category)];
+const CATEGORIES = ['All Statutory Manuals (7)', ...MANUALS.map((m) => m.category)];
 
 const ManualSearch: React.FC = () => {
-  const [selectedCat, setSelectedCat] = useState<string>('All Statutory Manuals (6)');
+  const [selectedCat, setSelectedCat] = useState<string>('All Statutory Manuals (7)');
 
   const filtered = useMemo(() => {
-    if (selectedCat === 'All Statutory Manuals (6)') return MANUALS;
+    if (selectedCat === 'All Statutory Manuals (7)') return MANUALS;
     return MANUALS.filter((m) => m.category === selectedCat);
   }, [selectedCat]);
 

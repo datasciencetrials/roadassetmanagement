@@ -1,13 +1,13 @@
 # ══════════════════════════════════════════════════════════════════════════════
 # Layer inventory for GeoNode auto-import — Uganda National Roads Management System
-# Source data: G:\My Drive\National Roads Authority\Uganda National Road Network Repository\8. Shapefiles
+# Source data: G:\My Drive\National Road Network Administration\Uganda National Road Network Repository\8. Shapefiles
 # Consumed by scripts/import_layers.sh. Each entry → one GeoNode dataset + style.
 # ══════════════════════════════════════════════════════════════════════════════
 
 defaults:
   category: transportation
-  attribution: National Roads Authority · Directorate of National Roads
-  keywords: [Uganda, roads, National Roads Authority, DNR, transport, Road Asset Management]
+  attribution: National Road Network Administration · Directorate of National Roads
+  keywords: [Uganda, roads, National Road Network, RAMS, transport, Road Asset Management]
   srs: EPSG:4326
 
 layers:
@@ -18,7 +18,7 @@ layers:
     alt_source: "8. Shapefiles/nationalroads.shp"
     style: road_network
     abstract: >
-      The classified national road network managed by National Roads Authority/DNR — ~21,302 km
+      The classified national road network managed by National Road Network Administration — ~21,284.02 km
       across 1,013 links. Symbolised by road class (A/B/C/M).
     keywords: [road network, links, classification]
 
@@ -66,11 +66,11 @@ layers:
     style: traffic_stations
     abstract: Weighbridge / axle-load enforcement station locations.
 
-  - name: mowt_stations
+  - name: maintenance_stations
     title: Maintenance Stations
-    source: "8. Shapefiles/MoWT_Stations/MoWT_Stations.shp"
+    source: "8. Shapefiles/Maintenance_Stations/Maintenance_Stations.shp"
     style: traffic_stations
-    abstract: National Roads Authority/National Roads Authority maintenance station network (23 stations).
+    abstract: National road maintenance station network (23 stations).
 
   # ── Administrative & context ───────────────────────────────────────────────
   - name: districts

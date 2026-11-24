@@ -36,7 +36,7 @@ const TOPICS: TopicEntry[] = [
   {
     label: '6 Regions & 23 Stations',
     content:
-      'Ministry of Works and Transport (MoWT), Department of National Roads operates across 6 Maintenance Regions (Central, Eastern, North Eastern, Northern, Southern, Western) and 23 Maintenance Stations: Arua, Fort Portal, Gulu, Hoima, Ibanda, Jinja, Kabale, Kampala, Kasese, Kitgum, Kotido, Lira, Luwero, Masaka, Masindi, Mbale, Mbarara, Moroto, Moyo, Mpigi, Mubende, Soroti, and Tororo.',
+      'NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION operates across 6 Maintenance Regions (Central, Eastern, North Eastern, Northern, Southern, Western) and 23 Maintenance Stations: Arua, Fort Portal, Gulu, Hoima, Ibanda, Jinja, Kabale, Kampala, Kasese, Kitgum, Kotido, Lira, Luwero, Masaka, Masindi, Mbale, Mbarara, Moroto, Moyo, Mpigi, Mubende, Soroti, and Tororo.',
   },
   {
     label: 'Vision 2040 & SQL Sync',
@@ -78,7 +78,7 @@ const ChatBot: React.FC = () => {
       <div className="briefing-stream">
         <div className="briefing-bubble">
           <p>
-            Welcome to the View-Only Statutory Intelligence Assistant for the Ministry of Works and Transport (MoWT), Department of National Roads. All metrics are synchronised with the Unified SQL Database via automated weekly refresh (snapshot {SNAPSHOT_DATE}) and project to 2040 as per Vision 2040.
+            Welcome to the View-Only Statutory Intelligence Assistant for the NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION. All metrics are synchronised with the Unified SQL Database via automated weekly refresh (snapshot {SNAPSHOT_DATE}) and project to 2040 as per Vision 2040.
           </p>
           <p className="briefing-highlight">{TOPICS[activeIdx].content}</p>
         </div>

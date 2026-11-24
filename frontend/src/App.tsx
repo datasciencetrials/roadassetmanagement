@@ -64,7 +64,7 @@ function App() {
       <header className="header">
         <h1>Uganda Road Asset Management AI Engine</h1>
         <p className="subtitle">
-          Ministry of Works and Transport (MoWT), Department of National Roads · Unified SQL Database (Automated Weekly Refresh) · Vision 2040 Analytics ({SNAPSHOT_DATE})
+          NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION · Unified SQL Database (Automated Weekly Refresh) · Vision 2040 Analytics ({SNAPSHOT_DATE})
         </p>
       </header>
 

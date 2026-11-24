@@ -93,7 +93,7 @@ const SeparateStructures: React.FC<SeparateStructuresProps> = ({ bridges, culver
             Condition Profile: Good 247 (44.75%) · Satisfactory 71 (12.86%) · Marginal 162 (29.35%) · Poor 52 (9.42%) · Critical 13 (2.36%) · Under Construction 7 (1.27%)
           </p>
           <div className="table-scroll">
-            <table className="mowt-table">
+            <table className="national_roads-table">
               <thead>
                 <tr>
                   <th>No</th>
@@ -145,7 +145,7 @@ const SeparateStructures: React.FC<SeparateStructuresProps> = ({ bridges, culver
           </div>
 
           <div className="table-scroll">
-            <table className="mowt-table">
+            <table className="national_roads-table">
               <thead>
                 <tr>
                   <th>No</th>
@@ -190,7 +190,7 @@ const SeparateStructures: React.FC<SeparateStructuresProps> = ({ bridges, culver
             Condition Profile: Good 403 (89.16%) · Satisfactory 39 (8.63%) · Marginal 4 (0.88%) · Poor 1 (0.22%) · Critical 4 (0.88%) · Under Construction 1 (0.22%)
           </p>
           <div className="table-scroll">
-            <table className="mowt-table">
+            <table className="national_roads-table">
               <thead>
                 <tr>
                   <th>No</th>
@@ -235,7 +235,7 @@ const SeparateStructures: React.FC<SeparateStructuresProps> = ({ bridges, culver
           </div>
 
           <div className="table-scroll">
-            <table className="mowt-table">
+            <table className="national_roads-table">
               <thead>
                 <tr>
                   <th>No</th>

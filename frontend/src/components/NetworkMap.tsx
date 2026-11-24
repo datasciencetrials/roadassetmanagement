@@ -144,8 +144,8 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
       });
 
       const popupHtml = `
-        <div class="mowt-light-popup">
-          <div class="mowt-popup-badge" style="background:${color};color:#FFFFFF;">BRIDGE · ${b.condition.toUpperCase()}</div>
+        <div class="national_roads-light-popup">
+          <div class="national_roads-popup-badge" style="background:${color};color:#FFFFFF;">BRIDGE · ${b.condition.toUpperCase()}</div>
           <h4>${b.id}: ${b.name}</h4>
           <p><strong>Road:</strong> ${b.road}</p>
           <p><strong>Class:</strong> ${b.roadClass}</p>
@@ -179,8 +179,8 @@ const NetworkMap: React.FC<NetworkMapProps> = ({ bridges, culverts }) => {
       });
 
       const popupHtml = `
-        <div class="mowt-light-popup">
-          <div class="mowt-popup-badge" style="background:#7C3AED;color:#FFFFFF;">MAJOR CULVERT · ${c.condition.toUpperCase()}</div>
+        <div class="national_roads-light-popup">
+          <div class="national_roads-popup-badge" style="background:#7C3AED;color:#FFFFFF;">MAJOR CULVERT · ${c.condition.toUpperCase()}</div>
           <h4>${c.id}: ${c.name}</h4>
           <p><strong>Road:</strong> ${c.road}</p>
           <p><strong>Class:</strong> ${c.roadClass}</p>

@@ -21,7 +21,7 @@ const NODES: MindNode[] = [
     y: 250,
     color: '#0071E3',
     detail:
-      'Ministry of Works and Transport (MoWT), Department of National Roads: View-only National Road Asset Management System synchronised with the Unified SQL Database.',
+      'NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION: View-only National Road Asset Management System synchronised with the Unified SQL Database.',
   },
   {
     id: 'surface',

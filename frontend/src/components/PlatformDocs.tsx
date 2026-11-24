@@ -16,7 +16,7 @@ const DOC_SECTIONS: DocSection[] = [
     title: '1. Platform Architecture & View-Only Governance',
     badge: 'VIEW-ONLY',
     summary:
-      'The National Road Asset Management System (RAMS) operates as a public, strictly view-only analytical portal for the Ministry of Works and Transport (MoWT), Department of National Roads.',
+      'The National Road Asset Management System (RAMS) operates as a public, strictly view-only analytical portal for the NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION.',
     bullets: [
       'Public view-only analytical portal with direct open read access and zero data-entry forms.',
       `Data synchronises automatically from the Unified SQL Database via Automated Weekly Refresh (snapshot ${SNAPSHOT_DATE}).`,

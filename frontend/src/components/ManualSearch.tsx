@@ -44,7 +44,7 @@ const MANUALS: ManualItem[] = [
     category: '6 Regions & 23 Stations',
     title: 'Regional & Maintenance Station Operations',
     page: 'Page 75',
-    text: 'Ministry of Works and Transport (MoWT), Department of National Roads operates across 6 Maintenance Regions (Central, Eastern, North Eastern, Northern, Southern, Western) and 23 Maintenance Stations: Arua, Fort Portal, Gulu, Hoima, Ibanda, Jinja, Kabale, Kampala, Kasese, Kitgum, Kotido, Lira, Luwero, Masaka, Masindi, Mbale, Mbarara, Moroto, Moyo, Mpigi, Mubende, Soroti, and Tororo.',
+    text: 'NATIONAL TRANSPORT GIS ENTERPRISE (National Road Network), NATIONAL ROAD NETWORK ADMINISTRATION operates across 6 Maintenance Regions (Central, Eastern, North Eastern, Northern, Southern, Western) and 23 Maintenance Stations: Arua, Fort Portal, Gulu, Hoima, Ibanda, Jinja, Kabale, Kampala, Kasese, Kitgum, Kotido, Lira, Luwero, Masaka, Masindi, Mbale, Mbarara, Moroto, Moyo, Mpigi, Mubende, Soroti, and Tororo.',
   },
 ];
 

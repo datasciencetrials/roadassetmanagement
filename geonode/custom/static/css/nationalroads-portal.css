@@ -6,7 +6,7 @@
   --neon-blue:#0088ff; --neon-orange:#ff6600; --neon-gold:#ffd700;
 }
 * { box-sizing: border-box; }
-html, body { margin:0; height:100%; background:#000; color:#e0e0e0;
+html, body { margin:0; height:100%; background:#F5F5F7; color:#0F172A;
   font-family: system-ui, "Segoe UI", Roboto, sans-serif; overflow:hidden; }
 
 @keyframes shimmer { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
@@ -30,7 +30,7 @@ html, body { margin:0; height:100%; background:#000; color:#e0e0e0;
 
 .portal-stats { position:fixed; z-index:3; top:96px; left:0; right:0;
   display:flex; gap:16px; justify-content:center; flex-wrap:wrap; padding:0 20px; }
-.portal-stats .stat { background:#0d0d0d; border:1px solid rgba(0,245,255,0.25);
+.portal-stats .stat { background:#FFFFFF; border:1px solid rgba(0,245,255,0.25);
   border-radius:14px; padding:12px 22px; min-width:120px; text-align:center;
   box-shadow:0 0 10px rgba(0,245,255,0.18); animation:neonPulse 4s ease-in-out infinite; }
 .stat-value { font-size:26px; font-weight:900; color:var(--neon-cyan);
@@ -41,7 +41,7 @@ html, body { margin:0; height:100%; background:#000; color:#e0e0e0;
   display:flex; gap:16px; justify-content:center; flex-wrap:wrap; padding:0 20px; }
 .pcard { display:flex; align-items:center; justify-content:center;
   width:180px; height:84px; border-radius:16px; text-decoration:none; font-weight:800; font-size:15px;
-  background:#0d0d0d; color:#e0e0e0; border:1px solid rgba(255,255,255,0.08);
+  background:#FFFFFF; color:#0F172A; border:1px solid rgba(255,255,255,0.08);
   transition: transform 0.25s, box-shadow 0.25s, filter 0.25s; }
 .pcard:hover { transform:translateY(-4px) scale(1.02); filter:brightness(1.2); }
 .pcard-cyan   { border-color:var(--neon-cyan);   box-shadow:0 0 0 1px var(--neon-cyan),0 0 24px #0284C744;   color:var(--neon-cyan); }
